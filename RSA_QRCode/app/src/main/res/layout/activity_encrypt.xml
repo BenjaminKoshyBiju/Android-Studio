@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EncryptActivity">
+
+    <LinearLayout
+        android:layout_width="392dp"
+        android:layout_height="674dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/etPlainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="data"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/etNval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="n value"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:id="@+id/etEval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            e value"
+            android:inputType="numberPassword" />
+
+        <Button
+            android:id="@+id/bEncrypt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onEncrypt"
+            android:text="Encrypt" />
+
+        <ImageView
+            android:id="@+id/idIVQrcode"
+            android:layout_width="match_parent"
+            android:layout_height="361dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/qr_code" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
